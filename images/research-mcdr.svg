@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Marine carbon dioxide removal concept illustration</title>
+  <desc id="desc">Stylized coastal ocean with carbon dioxide arrows, monitoring buoy, plankton, and seafloor sediment layers.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9f3f5"/>
+      <stop offset="0.52" stop-color="#8bcbd3"/>
+      <stop offset="1" stop-color="#1e5f8e"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2aa5b6"/>
+      <stop offset="0.48" stop-color="#1e6f99"/>
+      <stop offset="1" stop-color="#0d2137"/>
+    </linearGradient>
+    <linearGradient id="sediment" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b98b52"/>
+      <stop offset="1" stop-color="#5d4631"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.72" cy="0.16" r="0.22">
+      <stop offset="0" stop-color="#fff7c8" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff7c8" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#eef7f8"/>
+    </marker>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0d2137" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#sky)"/>
+  <rect width="1200" height="720" fill="url(#sun)"/>
+
+  <path d="M0 295 C150 260 265 308 405 282 C565 252 682 306 840 276 C990 248 1085 278 1200 260 L1200 720 L0 720 Z" fill="url(#water)"/>
+  <path d="M0 314 C160 286 285 330 415 304 C560 275 700 330 850 300 C1005 270 1090 302 1200 286" fill="none" stroke="#b9f0ee" stroke-width="8" stroke-linecap="round" opacity="0.72"/>
+  <path d="M0 362 C172 332 286 380 444 352 C612 324 718 384 902 350 C1020 330 1115 348 1200 338" fill="none" stroke="#eef7f8" stroke-width="3" opacity="0.38"/>
+  <path d="M0 593 C210 560 405 625 616 590 C830 555 990 610 1200 575 L1200 720 L0 720 Z" fill="url(#sediment)"/>
+  <path d="M0 630 C236 602 430 655 655 622 C860 592 1000 642 1200 612" fill="none" stroke="#d5b27a" stroke-width="10" opacity="0.65"/>
+  <path d="M0 670 C210 646 430 690 650 662 C865 635 1010 675 1200 648" fill="none" stroke="#7a5b3d" stroke-width="8" opacity="0.58"/>
+
+  <g filter="url(#softShadow)">
+    <path d="M738 258 l36 76 h-72 Z" fill="#f4fafb" stroke="#0d2137" stroke-width="5"/>
+    <circle cx="738" cy="232" r="34" fill="#f7b955" stroke="#0d2137" stroke-width="5"/>
+    <path d="M704 333 h68 l-10 70 h-48 Z" fill="#e86d4f" stroke="#0d2137" stroke-width="5"/>
+    <path d="M738 403 v95" stroke="#eef7f8" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="738" cy="515" r="18" fill="#4ecdc4" stroke="#eef7f8" stroke-width="5"/>
+  </g>
+
+  <g fill="none" stroke="#eef7f8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M274 178 C350 246 404 250 456 330" marker-end="url(#arrow)"/>
+    <path d="M520 128 C505 218 544 256 524 338" marker-end="url(#arrow)"/>
+    <path d="M902 160 C808 230 816 290 778 356" marker-end="url(#arrow)"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-weight="700" fill="#eef7f8" opacity="0.95">
+    <text x="226" y="162" font-size="42">CO2</text>
+    <text x="496" y="106" font-size="42">CO2</text>
+    <text x="886" y="144" font-size="42">CO2</text>
+  </g>
+
+  <g opacity="0.8">
+    <circle cx="318" cy="470" r="18" fill="#a8ddd9"/>
+    <circle cx="370" cy="430" r="9" fill="#4ecdc4"/>
+    <circle cx="448" cy="506" r="13" fill="#a8ddd9"/>
+    <circle cx="855" cy="462" r="16" fill="#4ecdc4"/>
+    <circle cx="914" cy="520" r="10" fill="#a8ddd9"/>
+    <path d="M252 520 c42 -28 90 -28 132 0" fill="none" stroke="#a8ddd9" stroke-width="5" stroke-linecap="round"/>
+    <path d="M808 550 c38 -26 82 -26 120 0" fill="none" stroke="#4ecdc4" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.7" stroke="#eef7f8" stroke-width="3" fill="none">
+    <path d="M135 238 C204 216 270 222 344 246"/>
+    <path d="M72 404 C140 380 222 386 294 414"/>
+    <path d="M948 408 C1008 386 1084 390 1152 418"/>
+  </g>
+</svg>
