@@ -330,7 +330,7 @@ p:last-child { margin-bottom: 0; }
   text-align: center;
 }
 
-.hero-eyebrow {
+.hero-subtitle {
   display: block;
   font-size: clamp(0.86rem, 1.6vw, 1rem);
   font-weight: 500;
@@ -347,8 +347,6 @@ p:last-child { margin-bottom: 0; }
   font-weight: 650;
   letter-spacing: -0.02em;
 }
-.hero h1 span { color: var(--seafoam); }
-
 .hero-tagline {
   font-size: clamp(1.03rem, 2.2vw, 1.24rem);
   color: rgba(255,255,255,0.82);
@@ -1134,9 +1132,9 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 480px) {
   h1 { font-size: 2rem; }
   .hero h1 { font-size: clamp(2.3rem, 13vw, 3.2rem); }
-  .hero-eyebrow {
+  .hero-subtitle {
     font-size: 0.86rem;
-    max-width: 18rem;
+    max-width: 17rem;
   }
   .hero-tagline {
     max-width: 19rem;
