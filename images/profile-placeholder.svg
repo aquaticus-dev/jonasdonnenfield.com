@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="260" height="260">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e5f8e"/>
+      <stop offset="100%" stop-color="#1a8fa0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="130" cy="130" r="130" fill="url(#bg)"/>
+  <text x="130" y="142" text-anchor="middle" font-family="Georgia, serif" font-size="80" font-weight="600" fill="rgba(255,255,255,0.9)" dominant-baseline="middle">JD</text>
+</svg>

@@ -1,0 +1,4 @@
+.DS_Store
+.venv-img/
+images/* copy.*
+*.log

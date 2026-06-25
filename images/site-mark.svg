@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Paleoceanography site icon">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d2137"/>
+      <stop offset="100%" stop-color="#1e5f8e"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#bg)"/>
+  <path d="M10 26c4-3 8-3 12 0s8 3 12 0 8-3 12 0 8 3 8 3" fill="none" stroke="#4ecdc4" stroke-width="3" stroke-linecap="round"/>
+  <path d="M12 35h40" stroke="#a8ddd9" stroke-width="2" opacity="0.9"/>
+  <path d="M14 41h36" stroke="#a8ddd9" stroke-width="2" opacity="0.75"/>
+  <path d="M16 47h32" stroke="#a8ddd9" stroke-width="2" opacity="0.6"/>
+  <circle cx="48" cy="18" r="3" fill="#eef7f8"/>
+</svg>
