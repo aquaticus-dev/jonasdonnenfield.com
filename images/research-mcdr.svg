@@ -1,76 +1,110 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
-  <title id="title">Marine carbon dioxide removal concept illustration</title>
-  <desc id="desc">Stylized coastal ocean with carbon dioxide arrows, monitoring buoy, plankton, and seafloor sediment layers.</desc>
+  <title id="title">Friendly ocean carbon cycle concept graphic</title>
+  <desc id="desc">A playful coastal ocean scene showing carbon moving from the atmosphere into seawater, biology, and seafloor sediments.</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#d9f3f5"/>
-      <stop offset="0.52" stop-color="#8bcbd3"/>
-      <stop offset="1" stop-color="#1e5f8e"/>
+      <stop offset="0" stop-color="#fff6d8"/>
+      <stop offset="0.55" stop-color="#bfeef0"/>
+      <stop offset="1" stop-color="#5ec2cf"/>
     </linearGradient>
-    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#2aa5b6"/>
-      <stop offset="0.48" stop-color="#1e6f99"/>
-      <stop offset="1" stop-color="#0d2137"/>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#55d3d0"/>
+      <stop offset="0.5" stop-color="#238bb7"/>
+      <stop offset="1" stop-color="#12466f"/>
     </linearGradient>
-    <linearGradient id="sediment" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#b98b52"/>
-      <stop offset="1" stop-color="#5d4631"/>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8b46f"/>
+      <stop offset="1" stop-color="#8c6441"/>
     </linearGradient>
-    <radialGradient id="sun" cx="0.72" cy="0.16" r="0.22">
-      <stop offset="0" stop-color="#fff7c8" stop-opacity="0.95"/>
-      <stop offset="1" stop-color="#fff7c8" stop-opacity="0"/>
-    </radialGradient>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
-      <path d="M0 0 L10 5 L0 10 Z" fill="#eef7f8"/>
-    </marker>
-    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0d2137" flood-opacity="0.28"/>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dff7f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0d2137" flood-opacity="0.22"/>
     </filter>
   </defs>
 
   <rect width="1200" height="720" fill="url(#sky)"/>
-  <rect width="1200" height="720" fill="url(#sun)"/>
+  <circle cx="968" cy="116" r="76" fill="#ffe38c" opacity="0.95"/>
+  <circle cx="968" cy="116" r="106" fill="#ffe38c" opacity="0.2"/>
 
-  <path d="M0 295 C150 260 265 308 405 282 C565 252 682 306 840 276 C990 248 1085 278 1200 260 L1200 720 L0 720 Z" fill="url(#water)"/>
-  <path d="M0 314 C160 286 285 330 415 304 C560 275 700 330 850 300 C1005 270 1090 302 1200 286" fill="none" stroke="#b9f0ee" stroke-width="8" stroke-linecap="round" opacity="0.72"/>
-  <path d="M0 362 C172 332 286 380 444 352 C612 324 718 384 902 350 C1020 330 1115 348 1200 338" fill="none" stroke="#eef7f8" stroke-width="3" opacity="0.38"/>
-  <path d="M0 593 C210 560 405 625 616 590 C830 555 990 610 1200 575 L1200 720 L0 720 Z" fill="url(#sediment)"/>
-  <path d="M0 630 C236 602 430 655 655 622 C860 592 1000 642 1200 612" fill="none" stroke="#d5b27a" stroke-width="10" opacity="0.65"/>
-  <path d="M0 670 C210 646 430 690 650 662 C865 635 1010 675 1200 648" fill="none" stroke="#7a5b3d" stroke-width="8" opacity="0.58"/>
-
-  <g filter="url(#softShadow)">
-    <path d="M738 258 l36 76 h-72 Z" fill="#f4fafb" stroke="#0d2137" stroke-width="5"/>
-    <circle cx="738" cy="232" r="34" fill="#f7b955" stroke="#0d2137" stroke-width="5"/>
-    <path d="M704 333 h68 l-10 70 h-48 Z" fill="#e86d4f" stroke="#0d2137" stroke-width="5"/>
-    <path d="M738 403 v95" stroke="#eef7f8" stroke-width="8" stroke-linecap="round"/>
-    <circle cx="738" cy="515" r="18" fill="#4ecdc4" stroke="#eef7f8" stroke-width="5"/>
+  <g fill="#ffffff" opacity="0.78">
+    <ellipse cx="154" cy="122" rx="64" ry="26"/>
+    <ellipse cx="216" cy="118" rx="84" ry="32"/>
+    <ellipse cx="288" cy="126" rx="58" ry="24"/>
+    <ellipse cx="804" cy="178" rx="58" ry="24"/>
+    <ellipse cx="860" cy="172" rx="76" ry="30"/>
+    <ellipse cx="930" cy="182" rx="54" ry="22"/>
   </g>
 
-  <g fill="none" stroke="#eef7f8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
-    <path d="M274 178 C350 246 404 250 456 330" marker-end="url(#arrow)"/>
-    <path d="M520 128 C505 218 544 256 524 338" marker-end="url(#arrow)"/>
-    <path d="M902 160 C808 230 816 290 778 356" marker-end="url(#arrow)"/>
+  <path d="M0 298 C118 268 230 324 358 294 C492 264 590 326 732 292 C900 252 1026 304 1200 272 L1200 720 L0 720 Z" fill="url(#sea)"/>
+  <path d="M0 305 C120 282 232 334 360 305 C495 276 588 336 730 304 C898 266 1026 318 1200 288" fill="none" stroke="#ecffff" stroke-width="11" stroke-linecap="round" opacity="0.74"/>
+  <path d="M0 372 C150 338 292 390 438 360 C604 326 742 392 904 358 C1030 332 1112 360 1200 344" fill="none" stroke="#b8f3ec" stroke-width="5" stroke-linecap="round" opacity="0.52"/>
+
+  <path d="M0 602 C170 570 342 638 542 604 C742 568 942 630 1200 584 L1200 720 L0 720 Z" fill="url(#sand)"/>
+  <path d="M0 642 C175 618 344 664 548 634 C752 604 942 654 1200 620" fill="none" stroke="#f2d28c" stroke-width="10" stroke-linecap="round" opacity="0.72"/>
+  <path d="M0 682 C182 662 350 700 558 676 C760 652 950 686 1200 660" fill="none" stroke="#6f5039" stroke-width="8" stroke-linecap="round" opacity="0.42"/>
+
+  <g filter="url(#shadow)" opacity="0.96">
+    <circle cx="340" cy="172" r="48" fill="#ffffff"/>
+    <circle cx="488" cy="126" r="34" fill="#ffffff" opacity="0.88"/>
+    <circle cx="826" cy="196" r="42" fill="#ffffff" opacity="0.92"/>
+    <circle cx="390" cy="234" r="18" fill="#dff7f4"/>
+    <circle cx="520" cy="218" r="14" fill="#dff7f4"/>
+    <circle cx="766" cy="260" r="16" fill="#dff7f4"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-weight="800" text-anchor="middle" fill="#1e5f8e">
+    <text x="340" y="184" font-size="38">CO2</text>
+    <text x="488" y="136" font-size="26" opacity="0.9">CO2</text>
+    <text x="826" y="206" font-size="32" opacity="0.95">CO2</text>
   </g>
 
-  <g font-family="Inter, Arial, sans-serif" font-weight="700" fill="#eef7f8" opacity="0.95">
-    <text x="226" y="162" font-size="42">CO2</text>
-    <text x="496" y="106" font-size="42">CO2</text>
-    <text x="886" y="144" font-size="42">CO2</text>
+  <g fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.92">
+    <path d="M356 228 C404 294 476 318 552 350"/>
+    <path d="M494 174 C530 238 580 276 638 326"/>
+    <path d="M804 252 C758 314 712 342 650 378"/>
+  </g>
+  <g fill="#ffffff" opacity="0.92">
+    <path d="M552 350 l-28 -8 l16 26 Z"/>
+    <path d="M638 326 l-28 -7 l16 25 Z"/>
+    <path d="M650 378 l22 -20 l-4 30 Z"/>
   </g>
 
-  <g opacity="0.8">
-    <circle cx="318" cy="470" r="18" fill="#a8ddd9"/>
-    <circle cx="370" cy="430" r="9" fill="#4ecdc4"/>
-    <circle cx="448" cy="506" r="13" fill="#a8ddd9"/>
-    <circle cx="855" cy="462" r="16" fill="#4ecdc4"/>
-    <circle cx="914" cy="520" r="10" fill="#a8ddd9"/>
-    <path d="M252 520 c42 -28 90 -28 132 0" fill="none" stroke="#a8ddd9" stroke-width="5" stroke-linecap="round"/>
-    <path d="M808 550 c38 -26 82 -26 120 0" fill="none" stroke="#4ecdc4" stroke-width="5" stroke-linecap="round"/>
+  <g stroke="#0f6f67" stroke-width="8" stroke-linecap="round" fill="none">
+    <path d="M180 622 C158 560 188 506 170 448"/>
+    <path d="M224 618 C246 552 214 494 246 436"/>
+    <path d="M986 612 C964 552 992 500 978 444"/>
+    <path d="M1032 610 C1056 546 1028 494 1060 438"/>
+  </g>
+  <g fill="#4ecdc4" opacity="0.95">
+    <ellipse cx="158" cy="508" rx="18" ry="42" transform="rotate(-28 158 508)"/>
+    <ellipse cx="190" cy="548" rx="16" ry="40" transform="rotate(26 190 548)"/>
+    <ellipse cx="236" cy="498" rx="17" ry="42" transform="rotate(30 236 498)"/>
+    <ellipse cx="998" cy="510" rx="18" ry="42" transform="rotate(-26 998 510)"/>
+    <ellipse cx="1048" cy="498" rx="17" ry="42" transform="rotate(32 1048 498)"/>
   </g>
 
-  <g opacity="0.7" stroke="#eef7f8" stroke-width="3" fill="none">
-    <path d="M135 238 C204 216 270 222 344 246"/>
-    <path d="M72 404 C140 380 222 386 294 414"/>
-    <path d="M948 408 C1008 386 1084 390 1152 418"/>
+  <g fill="#dff7f4" opacity="0.84">
+    <circle cx="438" cy="448" r="14"/>
+    <circle cx="480" cy="496" r="9"/>
+    <circle cx="532" cy="438" r="12"/>
+    <circle cx="734" cy="478" r="15"/>
+    <circle cx="780" cy="532" r="10"/>
+    <circle cx="882" cy="456" r="12"/>
+  </g>
+
+  <g transform="translate(450 566)" filter="url(#shadow)">
+    <rect x="0" y="0" width="300" height="72" rx="36" fill="#effaf7" stroke="#0d2137" stroke-width="5"/>
+    <circle cx="70" cy="36" r="20" fill="#4ecdc4"/>
+    <circle cx="128" cy="36" r="16" fill="#1e5f8e"/>
+    <circle cx="180" cy="36" r="22" fill="#4ecdc4"/>
+    <circle cx="236" cy="36" r="15" fill="#1e5f8e"/>
+    <g font-family="Inter, Arial, sans-serif" font-weight="800" text-anchor="middle" fill="#ffffff">
+      <text x="70" y="45" font-size="24">C</text>
+      <text x="128" y="44" font-size="20">C</text>
+      <text x="180" y="45" font-size="24">C</text>
+      <text x="236" y="44" font-size="20">C</text>
+    </g>
   </g>
 </svg>
