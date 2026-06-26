@@ -12,19 +12,24 @@
   const navLinks   = document.getElementById('navLinks');
   const hero       = document.querySelector('.hero');
 
-  const updateHeroPhotoFade = () => {
+  const updateHeroReveal = () => {
     if (!hero) return;
-    const progress = Math.min(window.scrollY / Math.max(window.innerHeight * 0.8, 1), 1);
-    const opacity = 0.32 * (1 - progress);
-    document.documentElement.style.setProperty('--hero-photo-opacity', opacity.toFixed(3));
+    const progress = Math.min(window.scrollY / Math.max(window.innerHeight * 0.55, 1), 1);
+    const eased = progress * progress * (3 - (2 * progress));
+    const detailOpacity = Math.min(Math.max((eased - 0.18) / 0.82, 0), 1);
+
+    document.documentElement.style.setProperty('--hero-photo-opacity', (1 - (0.42 * eased)).toFixed(3));
+    document.documentElement.style.setProperty('--hero-overlay-opacity', eased.toFixed(3));
+    document.documentElement.style.setProperty('--hero-content-offset', `${(30 * (1 - eased)).toFixed(2)}vh`);
+    document.documentElement.style.setProperty('--hero-detail-opacity', detailOpacity.toFixed(3));
   };
 
   // Sticky nav shadow on scroll
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 20);
-    updateHeroPhotoFade();
+    updateHeroReveal();
   });
-  updateHeroPhotoFade();
+  updateHeroReveal();
 
   // Mobile hamburger toggle
   if (navToggle && navLinks) {
