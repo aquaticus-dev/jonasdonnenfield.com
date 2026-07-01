@@ -52,7 +52,7 @@ body {
 :root {
   --hero-photo-opacity: 1;
   --hero-overlay-opacity: 0;
-  --hero-content-offset: 30vh;
+  --hero-content-offset: 4vh;
   --hero-detail-opacity: 0;
 }
 
@@ -247,7 +247,7 @@ p:last-child { margin-bottom: 0; }
 /* ---------- Hero (Home) ---------- */
 .hero {
   position: relative;
-  min-height: 155vh;
+  min-height: 185vh;
   background: var(--navy);
 }
 
@@ -269,7 +269,8 @@ p:last-child { margin-bottom: 0; }
   inset: 0;
   background-image: url('../images/research-ice-sheet.png');
   background-size: cover;
-  background-position: center 72%;
+  background-position: 48% 61%;
+  background-repeat: no-repeat;
   opacity: var(--hero-photo-opacity);
   transition: opacity 0.12s linear;
   pointer-events: none;
@@ -318,11 +319,17 @@ p:last-child { margin-bottom: 0; }
 }
 
 .hero h1 {
+  display: inline-block;
   color: var(--white);
   margin-bottom: 0;
+  padding: 0.08em 0.35em 0.14em;
   font-weight: 650;
   letter-spacing: -0.02em;
-  text-shadow: 0 3px 22px rgba(13,33,55,0.58);
+  background: radial-gradient(ellipse at center, rgba(13,33,55,0.42) 0%, rgba(13,33,55,0.24) 50%, transparent 76%);
+  border-radius: 999px;
+  box-shadow: 0 0 30px 18px rgba(13,33,55,0.18);
+  text-shadow: 0 3px 22px rgba(13,33,55,0.68);
+  backdrop-filter: blur(1px);
 }
 
 .hero-subtitle,
@@ -349,24 +356,26 @@ p:last-child { margin-bottom: 0; }
 
 .hero-scroll {
   position: absolute;
-  bottom: 6rem;
+  bottom: 4.5rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
-  gap: 0.5rem;
-  color: rgba(255,255,255,0.5);
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
+  gap: 0.45rem;
+  color: rgba(255,255,255,0.64);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   z-index: 3;
-  opacity: var(--hero-detail-opacity);
+  opacity: 0.78;
+  text-shadow: 0 2px 10px rgba(13,33,55,0.5);
 }
 .hero-scroll-line {
   width: 1px;
-  height: 40px;
-  background: rgba(255,255,255,0.3);
+  height: 34px;
+  background: rgba(255,255,255,0.42);
   animation: scroll-pulse 2s ease-in-out infinite;
 }
 @keyframes scroll-pulse {
@@ -376,15 +385,18 @@ p:last-child { margin-bottom: 0; }
 
 .hero-wave {
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   left: 0;
   right: 0;
   line-height: 0;
   z-index: 3;
+  pointer-events: none;
 }
+
 .hero-wave svg {
   width: 100%;
   height: 72px;
+  display: block;
 }
 
 /* ---------- Home: Quick Stats ---------- */

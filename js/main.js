@@ -20,7 +20,7 @@
 
     document.documentElement.style.setProperty('--hero-photo-opacity', (1 - (0.42 * eased)).toFixed(3));
     document.documentElement.style.setProperty('--hero-overlay-opacity', eased.toFixed(3));
-    document.documentElement.style.setProperty('--hero-content-offset', `${(30 * (1 - eased)).toFixed(2)}vh`);
+    document.documentElement.style.setProperty('--hero-content-offset', '4vh');
     document.documentElement.style.setProperty('--hero-detail-opacity', detailOpacity.toFixed(3));
   };
 
